@@ -1,4 +1,4 @@
-package one_list
+package types
 
 type OneNode struct {
 	Data string
