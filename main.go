@@ -8,9 +8,11 @@ import (
 
 func main() {
 	// l := types.NewOneLinkedList()
+
 	// l.PushFront("hello")
 	// l.PushBack("bye")
 	// l.Erase(1)
+
 	// n := l.GetAttr(1)
 	// var d string
 
@@ -21,9 +23,11 @@ func main() {
 	// }
 	
 	l := types.NewTwoLinkedList()
+
 	l.PushBack("hi")
 	l.PushBack("bye")
 	l.PushBack("bob")
+
 	for n := l.Head; n != nil; n = n.Next {
 		fmt.Println(n.Data)
 	}
