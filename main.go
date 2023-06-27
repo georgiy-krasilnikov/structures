@@ -31,4 +31,24 @@ func main() {
 	for n := l.Head; n != nil; n = n.Next {
 		fmt.Println(n.Data)
 	}
+
+	var stack types.Stack
+
+	stack.Push("good")
+	stack.Push("morning")
+
+	for len(stack) > 0 {
+		s, ok := stack.Pop()
+		if ok {
+			fmt.Println(s)
+		}
+	}
+
+	d := []int{10, 5, 7, 16, 13, 2}
+	t := types.NewTree()
+	for _, v := range(d) {
+		t.Add(types.NewNode(v))
+	}
+
+	t.Show(t.Root)
 }
